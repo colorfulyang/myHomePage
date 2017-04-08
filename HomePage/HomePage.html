@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的主页</title>
+    <link href="HomePage.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+          $(document).ready(function(){
+            $("li").click(function(){
+              $('.content').hide();
+                $(".index"+ ($(this).index()+1)).show();
+            });
+            $("li:eq(0)").click();
+          })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="../pageImage/top.jpg"/>
+        </div>
+        <div class="main">
+            <div class="woniu">
+                <div class="music"><img src="../pageImage/music.png"/></div>
+                <div class="music"><img src="../pageImage/music.png"/></div>
+                <div><img class="snail" src="../pageImage/woniu.png"/></div>
+            </div>
+            <div class="flower1 flower"><img src="../pageImage/flower.png"/></div>
+            <div class="flower2 flower"><img src="../pageImage/flower.png"/></div>
+            <div class="self">
+                <div class="photo">
+                    <img src="../pageImage/touxiang.jpg"/><br/>
+                </div>
+                <div class="intro">
+                    姓名:<input type="text" class="person"/>
+                    <hr/>
+                    性别:<input type="text" class="person"/>
+                    <hr/>
+                    生日：<input type="text" class="person"/>
+                    <hr/>
+                    签名：<input type="text" class="person"/>
+                    <hr/>
+                </div>
+            </div>
+            <div class="pintu">
+                <ul>
+                    <li>空间动态</li>
+                    <li>兴趣爱好</li>
+                    <li>个人资料</li>
+                </ul>
+                <div class="clear"></div>
+                <div class="index1 content">
+                    <p>最近照片</p>
+                    <div>
+                        <img src="../pageImage/blue.png" class="blue"/>
+                        <ul>
+                            <li><img src="../pageImage/pic1.jpg" alt=""/></li>
+                            <li><img src="../pageImage/pic2.jpg" alt=""/></li>
+                            <li><img src="../pageImage/pic3.jpg" alt=""/></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="index2 content">
+                    <img src="../pageImage/pink.png" class="pink"/>
+                </div>
+                <div class="index3 content"></div>
+            </div>
+            <div class="wish">
+                <div class="wishLeft">
+                    <table cellspacing="10px">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="wishRight"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

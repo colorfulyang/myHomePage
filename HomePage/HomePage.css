@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+
+}
+.clear{
+    clear: both;
+}
+.container{
+    background-color:#FEFCCC ;
+    width: 100%;
+}
+.banner{
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+}
+.main{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(251,251,251,0.2);
+    border: 2px solid lightgreen;
+    margin-top: 200px;
+    height: 2000px;
+}
+.banner img,.main .woniu img,.flower img{
+    display: block;
+    width: 100%;
+}
+.main .woniu{
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top:-300px;
+    animation-direction: alternate;
+    animation:runningSnail 30s infinite;
+    -moz-animation: runningSnail 30s infinite;
+    -webkit-animation: runningSnail 30s infinite;
+    -o-animation: runningSnail 30s infinite;
+}
+.main .snail{
+    width: 200px;
+    height: 200px;
+
+}
+.main .music {
+    width: 40px;
+    height: 50px;
+}
+.main .music img{
+    width: 100%;
+    display: block;
+}
+
+@keyframes runningSnail{
+    0%  {left:0;transform:scale(1,1);}
+    49% {left:900px;transform: scale(1,1);}
+    50% {left:900px;transform: scale(-1,1);}
+    99% { left:0;transform: scale(-1,1);}
+    100%{ left: 0; transform: scale(1,1);}
+}
+.main .flower{
+    position: absolute;
+    width: 951px;
+    height: 602px;
+}
+.flower1{
+    left: -530px;
+    top: -500px;
+}
+.flower2{
+    left: 600px;
+    top:-500px;
+    transform: scale(-1,1);
+}
+.main .self{
+    width: 100%;
+    height: 200px;
+    margin-top: 70px;
+}
+.main .self .photo{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.main .self .intro{
+    float: left;
+    width: 700px;
+    height: 200px;
+}
+.main .self .intro .person{
+    height: 40px;
+    width: 650px;
+    background: transparent;
+    border: none;
+}
+.main .pintu{
+    width: 900px;
+    height: 600px;
+    background: rgba(251,251,251,0.2);
+    position: relative;
+    border: 1px solid lightgreen;
+    margin: 0 auto;
+}
+.main .pintu ul li{
+    list-style: none;
+    height: 30px;
+    width: 100px;
+    margin-left: 30px;
+    background: pink;
+    float: left;
+    text-align: center;
+}
+ /*.index1,.index2,.index3{
+    width: 100%;
+    height: 500px;
+
+}*/
+.main .pintu .index1{
+    border: 1px solid #99AAF5;
+    position:absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 500px;
+}
+.main .pintu .index2{
+    border: 1px solid #FC79F6;
+    position:absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 800px;
+
+}
+.main .pintu .index3{
+    border: 1px solid gold;
+    position:absolute;
+    width: 100%;
+    height: 500px;
+    left: 0;
+    top: 50px;
+}
+.main .pintu .blue{
+    transform: scale(1,-1);
+}
+.main .pintu .pink{
+    transform: scale(-1,-1);
+}
+.wishLeft{
+    width: 50%;
+    float:left;
+
+}
+.wishLeft table{ border: none;}
+.wishLeft table td{ }
